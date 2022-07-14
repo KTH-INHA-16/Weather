@@ -17,7 +17,7 @@
 		D62E36A7287287140007FF71 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D62E36A6287287140007FF71 /* Moya */; };
 		D62E36A9287287140007FF71 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D62E36A8287287140007FF71 /* ReactiveMoya */; };
 		D62E36AB287287140007FF71 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D62E36AA287287140007FF71 /* RxMoya */; };
-		D62E3CF22872925C002E33C5 /* CurrentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E3CF12872925C002E33C5 /* CurrentAPI.swift */; };
+		D62E3CF22872925C002E33C5 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E3CF12872925C002E33C5 /* WeatherAPI.swift */; };
 		D6E46AEB287D496400B8677D /* MoyaProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E46AEA287D496400B8677D /* MoyaProvider+.swift */; };
 		D6E46AED287D4A5600B8677D /* CurrentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E46AEC287D4A5600B8677D /* CurrentResponse.swift */; };
 		D6E46AEF287E9C4100B8677D /* forecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E46AEE287E9C4100B8677D /* forecastResponse.swift */; };
@@ -31,7 +31,7 @@
 		D62E369C28727F390007FF71 /* WeatherMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainView.swift; sourceTree = "<group>"; };
 		D62E369F28727F4E0007FF71 /* WeatherMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainViewModel.swift; sourceTree = "<group>"; };
 		D62E36A12872856B0007FF71 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
-		D62E3CF12872925C002E33C5 /* CurrentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAPI.swift; sourceTree = "<group>"; };
+		D62E3CF12872925C002E33C5 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		D6E46AEA287D496400B8677D /* MoyaProvider+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+.swift"; sourceTree = "<group>"; };
 		D6E46AEC287D4A5600B8677D /* CurrentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentResponse.swift; sourceTree = "<group>"; };
 		D6E46AEE287E9C4100B8677D /* forecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forecastResponse.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		D62E36AC287292240007FF71 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				D62E3CF12872925C002E33C5 /* CurrentAPI.swift */,
+				D62E3CF12872925C002E33C5 /* WeatherAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 				D62E369D28727F390007FF71 /* WeatherMainView.swift in Sources */,
 				D6E46AEB287D496400B8677D /* MoyaProvider+.swift in Sources */,
 				D6E46AED287D4A5600B8677D /* CurrentResponse.swift in Sources */,
-				D62E3CF22872925C002E33C5 /* CurrentAPI.swift in Sources */,
+				D62E3CF22872925C002E33C5 /* WeatherAPI.swift in Sources */,
 				D6E46AEF287E9C4100B8677D /* forecastResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
