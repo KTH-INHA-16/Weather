@@ -13,14 +13,32 @@ import CombineMoya
 extension MoyaProvider {
     func request<T: Decodable>(target: Target,
                  callbackQueue: DispatchQueue? = nil) -> AnyPublisher<T?, Never> {
+        let startTime = DispatchTime.now()
         return self.requestPublisher(target,
                                      callbackQueue: callbackQueue)
         .map { response -> T? in
+            Self.log(target: target, response: response, startTime: startTime)
             let decodeResponse: T? = response.decode()
             return decodeResponse
         }
         .assertNoFailure()
         .eraseToAnyPublisher()
+    }
+}
+
+private extension MoyaProvider {
+    static func log(target: Target,
+                    response: Response,
+                    startTime: DispatchTime) {
+        print("")
+        NSLog("[Weather API] method: \(target.method)")
+        NSLog("[Weather API] url: \(response.request?.url?.absoluteString ?? "no url")")
+        NSLog("[Weather API] task: \(target)")
+        NSLog("[Weather API] statusCode: " + String(response.statusCode))
+        NSLog("[Weather API] response: " + (String(data: response.data,
+                                                       encoding: .utf8) ?? "no data"))
+        NSLog("[Weahter API] spend: " + "\(startTime.distance(to: .now())) s")
+        print("")
     }
 }
 
