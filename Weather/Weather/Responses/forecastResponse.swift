@@ -9,6 +9,7 @@ import Foundation
 
 struct ForecastResponse: Codable {
     let cnt: Int
+    let cod: String
     let list: [ForecastWeather]
 }
 
@@ -20,7 +21,7 @@ struct ForecastWeather: Codable {
     let wind: WeatherWind
     let visibility: Int
     let pop: Double
-    let rain: WeatherRain
+    let rain: WeatherRain?
     let sys: ForecastSys
     let dtText: String
     

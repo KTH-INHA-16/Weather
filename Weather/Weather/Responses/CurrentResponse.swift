@@ -18,7 +18,7 @@ struct CurrentResponse: Codable {
     let timezone: Int
     let name: String
     let id: Int
-    let code: Int
+    let cod: Int
 }
 
 struct CurrentSys: Codable {
@@ -30,7 +30,7 @@ struct CurrentSys: Codable {
 }
 
 struct WeatherInfo: Codable {
-    let id: String
+    let id: Int
     let main: String
     let description: String
     let icon: String
